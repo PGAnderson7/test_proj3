@@ -1,11 +1,11 @@
-import numpy as np
-
 import sqlalchemy
 from sqlalchemy import create_engine, func
 
 from flask import Flask, jsonify, render_template
 import json
 import decimal, datetime
+
+import os
 
 # get the heroku database url from environment
 db_uri = os.environ[“DATABASE_URL”]
